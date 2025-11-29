@@ -7,14 +7,6 @@
   <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-<!-- Hero-Banner -->
-<section class="hero">
-  <div class="hero-content">
-    <h1>Willkommen bei 321Shop</h1>
-    <p>Crypto City – Demo-Shop für Investoren</p>
-    <a href="produkte.html" class="btn">Jetzt Produkte entdecken</a>
-  </div>
-</section>
   <header>
     <nav class="nav">
       <div class="brand">321Shop – Crypto City Demo</div>
@@ -27,26 +19,35 @@
     </nav>
   </header>
 
-  <main class="container">
-    <h1 class="h1">Willkommen bei 321Shop</h1>
-    <p class="p">Crypto City – Demo-Shop für Investoren. Wähle eine Kategorie oder stöbere direkt in den Produkten:</p>
+  <!-- Hero-Banner -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Willkommen bei 321Shop</h1>
+      <p>Crypto City – Demo-Shop für Investoren</p>
+      <a href="produkte.html" class="btn">Jetzt Produkte entdecken</a>
+    </div>
+  </section>
 
-    <!-- Kategorien-Kacheln -->
+  <main class="container">
+    <!-- Kategorien -->
+    <h2 class="h1">Unsere Kategorien</h2>
+    <p class="p">Wähle eine Kategorie, um direkt einzusteigen:</p>
+
     <section class="grid grid-3" style="margin-top:2rem;">
       <div class="card" style="text-align:center;">
-        <h2>Produkte</h2>
+        <h3>Produkte</h3>
         <p class="p">Neue Spielsets und Erweiterungen.</p>
         <a class="btn" href="produkte.html">Zur Kategorie</a>
       </div>
 
       <div class="card" style="text-align:center;">
-        <h2>Gebrauchte Produkte</h2>
+        <h3>Gebrauchte Produkte</h3>
         <p class="p">Geprüfte Sets zu reduzierten Preisen.</p>
         <a class="btn" href="gebraucht.html">Zur Kategorie</a>
       </div>
 
       <div class="card" style="text-align:center;">
-        <h2>Affiliate Links</h2>
+        <h3>Affiliate Links</h3>
         <p class="p">Partnerangebote und Empfehlungen.</p>
         <a class="btn" href="affiliate.html">Zur Kategorie</a>
       </div>
@@ -78,30 +79,3 @@
 
       <!-- Produkt 2 -->
       <div class="product" style="margin-top:2rem;">
-        <img src="https://via.placeholder.com/200x200.png?text=Premium+Set" alt="Premium Set">
-        <div class="product-info">
-          <h2>Premium Set</h2>
-          <p>Exklusive Karten, NFT-Token und Zugang zu erweiterten Spielmodi.</p>
-          <p class="price">€600,00</p>
-          <div class="paypal-button">
-            <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
-              <input type="hidden" name="cmd" value="_xclick">
-              <input type="hidden" name="business" value="d_daniel7@web.de">
-              <input type="hidden" name="item_name" value="Premium Set">
-              <input type="hidden" name="amount" value="600.00">
-              <input type="hidden" name="currency_code" value="EUR">
-              <input type="hidden" name="return" value="https://ddshop-s6md.vercel.app/success.html">
-              <input type="hidden" name="cancel_return" value="https://ddshop-s6md.vercel.app/cancel.html">
-              <button class="btn" type="submit">Jetzt mit PayPal bezahlen</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    &copy; 2025 321Shop – Crypto City Demo. Alle Rechte vorbehalten.
-  </footer>
-</body>
-</html>
