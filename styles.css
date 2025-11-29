@@ -1,15 +1,3 @@
-<header>
-  <h1>Willkommen bei 321Shop</h1>
-  <p>Crypto City – Demo-Shop für Investoren</p>
-  <nav class="nav">
-    <div class="brand">321Shop</div>
-    <a href="produkte.html">Produkte</a>
-    <a href="gebraucht.html">Gebrauchte Produkte</a>
-    <a href="affiliate.html">Affiliate Links</a>
-    <a href="impressum.html">Impressum</a>
-  </nav>
-</header>
- /* styles.css */
 :root {
   --bg: #f7f7f8;
   --card: #ffffff;
@@ -101,8 +89,12 @@ header {
   border-radius: 8px;
   border: none;
   cursor: pointer;
+  transition: all 0.2s ease;
 }
-.btn:hover { filter: brightness(1.08); }
+.btn:hover {
+  filter: brightness(1.08);
+  transform: translateY(-2px);
+}
 
 .btn-secondary {
   background: #333;
