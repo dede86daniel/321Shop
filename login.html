@@ -1,0 +1,82 @@
+<!-- login.html -->
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>321Shop – Anmeldung</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <div class="brand">321Shop – Crypto City Demo</div>
+      <a href="index.html">Startseite</a>
+      <a href="login.html" class="active">Anmeldung</a>
+      <a href="produkte.html">Produkte</a>
+      <a href="impressum.html">Impressum</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="grid grid-2">
+      <div class="card">
+        <h1 class="h1">Anmelden</h1>
+        <form action="#" method="post" novalidate>
+          <label class="label" for="email">E‑Mail</label>
+          <input class="input" type="email" id="email" name="email" placeholder="dein@mail.de" required/>
+
+          <label class="label" for="password">Passwort</label>
+          <input class="input" type="password" id="password" name="password" placeholder="••••••••" required/>
+
+          <div style="margin-top:1rem;">
+            <button class="btn" type="submit">Einloggen</button>
+          </div>
+          <p class="small" style="margin-top:0.6rem;">Hinweis: Demo‑Formular ohne Server‑Verarbeitung.</p>
+        </form>
+      </div>
+
+      <div class="card">
+        <h2 style="margin:0 0 0.5rem;">Noch kein Konto?</h2>
+        <form action="#" method="post" novalidate>
+          <div class="form-row">
+            <div>
+              <label class="label" for="firstName">Vorname</label>
+              <input class="input" type="text" id="firstName" name="firstName" placeholder="Max" required/>
+            </div>
+            <div>
+              <label class="label" for="lastName">Nachname</label>
+              <input class="input" type="text" id="lastName" name="lastName" placeholder="Mustermann" required/>
+            </div>
+          </div>
+
+          <label class="label" for="regEmail">E‑Mail</label>
+          <input class="input" type="email" id="regEmail" name="regEmail" placeholder="dein@mail.de" required/>
+
+          <label class="label" for="regPassword">Passwort</label>
+          <input class="input" type="password" id="regPassword" name="regPassword" placeholder="••••••••" required/>
+
+          <label class="label" for="country">Land</label>
+          <select id="country" name="country" class="input">
+            <option value="DE">Deutschland</option>
+            <option value="AT">Österreich</option>
+            <option value="CH">Schweiz</option>
+            <option value="EU">Sonstiges EU</option>
+          </select>
+
+          <div style="margin-top:1rem;">
+            <button class="btn" type="submit">Konto erstellen</button>
+          </div>
+          <p class="small" style="margin-top:0.6rem;">
+            Hinweis: Demo‑Registrierung zur Darstellung der Nutzerflüsse.
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    &copy; 2025 321Shop – Crypto City Demo. Alle Rechte vorbehalten.
+  </footer>
+</body>
+</html>
