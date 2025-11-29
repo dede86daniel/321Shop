@@ -19,11 +19,19 @@
     </nav>
   </header>
 
+  <!-- Hero-Banner -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Anmeldung</h1>
+      <p>Logge dich ein oder registriere ein neues Konto.</p>
+    </div>
+  </section>
+
   <main class="container">
     <section class="grid grid-2">
       <!-- Login -->
       <div class="card">
-        <h1 class="h1">Anmelden</h1>
+        <h2 class="h1">Anmelden</h2>
         <form action="#" method="post" novalidate>
           <label class="label" for="email">E‑Mail</label>
           <input class="input" type="email" id="email" name="email" placeholder="d_daniel7@web.de" required/>
@@ -59,12 +67,17 @@
           <label class="label" for="regPassword">Passwort</label>
           <input class="input" type="password" id="regPassword" name="regPassword" placeholder="••••••••" required/>
 
-          <label class="label" for="country">Land</label>
-          <select id="country" name="country" class="input">
-            <option value="DE">Deutschland</option>
-            <option value="AT">Österreich</option>
-            <option value="CH">Schweiz</option>
-            <option value="EU">Sonstiges EU</option>
-          </select>
-
           <div style="margin-top:1rem;">
+            <button class="btn" type="submit">Registrieren</button>
+          </div>
+          <p class="small" style="margin-top:0.6rem;">Hinweis: Demo‑Formular ohne Server‑Verarbeitung.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    &copy; 2025 321Shop – Crypto City Demo. Alle Rechte vorbehalten.
+  </footer>
+</body>
+</html>
