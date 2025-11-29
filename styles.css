@@ -1,3 +1,37 @@
+/* Hero-Banner */
+.hero {
+  background: url("https://via.placeholder.com/1600x500.png?text=Crypto+City+Hero") center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 6rem 2rem;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4); /* dunkler Overlay-Effekt */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+/* Farbvariablen */
 :root {
   --bg: #f7f7f8;
   --card: #ffffff;
@@ -17,6 +51,7 @@ body {
   color: var(--text);
 }
 
+/* Header & Navigation */
 header {
   background: #111;
   color: #fff;
@@ -49,6 +84,7 @@ header {
   background: rgba(255,255,255,0.12);
 }
 
+/* Container & Cards */
 .container {
   max-width: 1080px;
   margin: 2rem auto;
@@ -132,28 +168,4 @@ header {
   grid-template-columns: 1fr 1fr;
 }
 @media (max-width: 800px) {
-  .form-row { grid-template-columns: 1fr; }
-}
-
-/* Footer */
-.footer {
-  padding: 2rem 1rem;
-  border-top: 1px solid var(--border);
-  margin-top: 2rem;
-  color: var(--muted);
-  text-align: center;
-}
-
-/* Produkte */
-.price {
-  color: var(--accent);
-  font-weight: 700;
-  margin-top: 0.3rem;
-}
-
-.product-card img {
-  width: 100%;
-  max-width: 220px;
-  border-radius: 8px;
-  border: 1px solid var(--border);
-}
+  .form-row { grid-template
