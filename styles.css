@@ -62,6 +62,7 @@ header {
   padding: 1rem;
 }
 
+/* Grid Layouts */
 .grid {
   display: grid;
   gap: 1rem;
@@ -74,12 +75,22 @@ header {
   .grid-2 { grid-template-columns: 1fr; }
 }
 
+.grid-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+@media (max-width: 900px) {
+  .grid-3 { grid-template-columns: 1fr; }
+}
+
+/* Typografie */
 .h1 {
   font-size: 1.8rem;
   margin: 0 0 0.5rem;
 }
 .p { color: var(--muted); }
+.small { font-size: 0.9rem; color: var(--muted); }
 
+/* Buttons */
 .btn {
   display: inline-block;
   background: var(--primary);
@@ -100,6 +111,7 @@ header {
   background: #333;
 }
 
+/* Formulare */
 .input, select {
   width: 100%;
   padding: 0.6rem 0.7rem;
@@ -114,6 +126,16 @@ header {
   display: block;
 }
 
+.form-row {
+  display: grid;
+  gap: 0.8rem;
+  grid-template-columns: 1fr 1fr;
+}
+@media (max-width: 800px) {
+  .form-row { grid-template-columns: 1fr; }
+}
+
+/* Footer */
 .footer {
   padding: 2rem 1rem;
   border-top: 1px solid var(--border);
@@ -122,6 +144,7 @@ header {
   text-align: center;
 }
 
+/* Produkte */
 .price {
   color: var(--accent);
   font-weight: 700;
@@ -134,14 +157,3 @@ header {
   border-radius: 8px;
   border: 1px solid var(--border);
 }
-
-.form-row {
-  display: grid;
-  gap: 0.8rem;
-  grid-template-columns: 1fr 1fr;
-}
-@media (max-width: 800px) {
-  .form-row { grid-template-columns: 1fr; }
-}
-
-.small { font-size: 0.9rem; color: var(--muted); }
