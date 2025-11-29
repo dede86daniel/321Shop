@@ -50,6 +50,9 @@
       background: #eee;
       font-size: 0.9rem;
     }
+    .paypal-button {
+      margin-top: 1rem;
+    }
   </style>
 </head>
 <body>
@@ -65,8 +68,19 @@
       <div class="product-info">
         <h2>Crypto Starter Pack</h2>
         <p>Das perfekte Einstiegspaket für neue Spieler. Enthält Token, Karten und Spielanleitung.</p>
-        <p class="price">€19,99</p>
-        <div id="paypal-button-container-1"></div>
+        <p class="price">€600,00</p>
+        <div class="paypal-button">
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+            <input type="hidden" name="cmd" value="_xclick">
+            <input type="hidden" name="business" value="d_daniel7@web.de">
+            <input type="hidden" name="item_name" value="Crypto Starter Pack">
+            <input type="hidden" name="amount" value="600.00">
+            <input type="hidden" name="currency_code" value="EUR">
+            <input type="hidden" name="return" value="https://deine-domain.de/success.html">
+            <input type="hidden" name="cancel_return" value="https://deine-domain.de/cancel.html">
+            <button type="submit">Jetzt mit PayPal bezahlen</button>
+          </form>
+        </div>
       </div>
     </div>
 
@@ -76,8 +90,19 @@
       <div class="product-info">
         <h2>Premium Set</h2>
         <p>Exklusive Karten, NFT-Token und Zugang zu erweiterten Spielmodi.</p>
-        <p class="price">€149,99</p>
-        <div id="paypal-button-container-2"></div>
+        <p class="price">€600,00</p>
+        <div class="paypal-button">
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+            <input type="hidden" name="cmd" value="_xclick">
+            <input type="hidden" name="business" value="d_daniel7@web.de">
+            <input type="hidden" name="item_name" value="Premium Set">
+            <input type="hidden" name="amount" value="600.00">
+            <input type="hidden" name="currency_code" value="EUR">
+            <input type="hidden" name="return" value="https://deine-domain.de/success.html">
+            <input type="hidden" name="cancel_return" value="https://deine-domain.de/cancel.html">
+            <button type="submit">Jetzt mit PayPal bezahlen</button>
+          </form>
+        </div>
       </div>
     </div>
   </div>
@@ -85,43 +110,5 @@
   <footer>
     &copy; 2025 321Shop – Crypto City Demo. Alle Rechte vorbehalten.
   </footer>
-
-  <!-- PayPal SDK mit deiner echten Live-Client-ID -->
-  <script src="https://www.paypal.com/sdk/js?client-id=AXGi7FD_Qb4n0H9GVApzRCtslHkvZQ_hAWe4Auo921J0sL1ni3E-bWos8OOI69ANEOGdkC_--VofR4b5&currency=EUR"></script>
-  <script>
-    // Produkt 1 Button
-    paypal.Buttons({
-      createOrder: function(data, actions) {
-        return actions.order.create({
-          purchase_units: [{
-            description: "Crypto Starter Pack",
-            amount: { value: '19.99' }
-          }]
-        });
-      },
-      onApprove: function(data, actions) {
-        return actions.order.capture().then(function(details) {
-          alert('Zahlung abgeschlossen von ' + details.payer.name.given_name);
-        });
-      }
-    }).render('#paypal-button-container-1');
-
-    // Produkt 2 Button
-    paypal.Buttons({
-      createOrder: function(data, actions) {
-        return actions.order.create({
-          purchase_units: [{
-            description: "Premium Set",
-            amount: { value: '49.99' }
-          }]
-        });
-      },
-      onApprove: function(data, actions) {
-        return actions.order.capture().then(function(details) {
-          alert('Zahlung abgeschlossen von ' + details.payer.name.given_name);
-        });
-      }
-    }).render('#paypal-button-container-2');
-  </script>
 </body>
 </html>
