@@ -2,17 +2,16 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>321Shop – Crypto City Demo</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
   <header>
-    <h1>Willkommen bei 321Shop</h1>
-    <p>Crypto City – Demo-Shop für Investoren</p>
-    <!-- Navigation -->
     <nav class="nav">
-      <div class="brand">321Shop</div>
+      <div class="brand">321Shop – Crypto City Demo</div>
+      <a href="index.html" class="active">Startseite</a>
+      <a href="login.html">Anmeldung</a>
       <a href="produkte.html">Produkte</a>
       <a href="gebraucht.html">Gebrauchte Produkte</a>
       <a href="affiliate.html">Affiliate Links</a>
@@ -21,33 +20,80 @@
   </header>
 
   <main class="container">
-    <!-- Produkt 1 -->
-    <div class="product">
-      <img src="https://via.placeholder.com/200x200.png?text=Crypto+Starter" alt="Crypto Starter Pack">
-      <div class="product-info">
-        <h2>Crypto Starter Pack</h2>
-        <p>Das perfekte Einstiegspaket für neue Spieler. Enthält Token, Karten und Spielanleitung.</p>
-        <p class="price">€600,00</p>
-        <div class="paypal-button">
-          <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
-            <input type="hidden" name="cmd" value="_xclick">
-            <input type="hidden" name="business" value="d_daniel7@web.de">
-            <input type="hidden" name="item_name" value="Crypto Starter Pack">
-            <input type="hidden" name="amount" value="600.00">
-            <input type="hidden" name="currency_code" value="EUR">
-            <input type="hidden" name="return" value="https://ddshop-s6md.vercel.app/success.html">
-            <input type="hidden" name="cancel_return" value="https://ddshop-s6md.vercel.app/cancel.html">
-            <button class="btn" type="submit">Jetzt mit PayPal bezahlen</button>
-          </form>
+    <h1 class="h1">Willkommen bei 321Shop</h1>
+    <p class="p">Crypto City – Demo-Shop für Investoren. Wähle eine Kategorie oder stöbere direkt in den Produkten:</p>
+
+    <!-- Kategorien-Kacheln -->
+    <section class="grid grid-3" style="margin-top:2rem;">
+      <div class="card" style="text-align:center;">
+        <h2>Produkte</h2>
+        <p class="p">Neue Spielsets und Erweiterungen.</p>
+        <a class="btn" href="produkte.html">Zur Kategorie</a>
+      </div>
+
+      <div class="card" style="text-align:center;">
+        <h2>Gebrauchte Produkte</h2>
+        <p class="p">Geprüfte Sets zu reduzierten Preisen.</p>
+        <a class="btn" href="gebraucht.html">Zur Kategorie</a>
+      </div>
+
+      <div class="card" style="text-align:center;">
+        <h2>Affiliate Links</h2>
+        <p class="p">Partnerangebote und Empfehlungen.</p>
+        <a class="btn" href="affiliate.html">Zur Kategorie</a>
+      </div>
+    </section>
+
+    <!-- Direktprodukte -->
+    <section style="margin-top:3rem;">
+      <!-- Produkt 1 -->
+      <div class="product">
+        <img src="https://via.placeholder.com/200x200.png?text=Crypto+Starter" alt="Crypto Starter Pack">
+        <div class="product-info">
+          <h2>Crypto Starter Pack</h2>
+          <p>Das perfekte Einstiegspaket für neue Spieler. Enthält Token, Karten und Spielanleitung.</p>
+          <p class="price">€600,00</p>
+          <div class="paypal-button">
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+              <input type="hidden" name="cmd" value="_xclick">
+              <input type="hidden" name="business" value="d_daniel7@web.de">
+              <input type="hidden" name="item_name" value="Crypto Starter Pack">
+              <input type="hidden" name="amount" value="600.00">
+              <input type="hidden" name="currency_code" value="EUR">
+              <input type="hidden" name="return" value="https://ddshop-s6md.vercel.app/success.html">
+              <input type="hidden" name="cancel_return" value="https://ddshop-s6md.vercel.app/cancel.html">
+              <button class="btn" type="submit">Jetzt mit PayPal bezahlen</button>
+            </form>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- Produkt 2 -->
-    <div class="product">
-      <img src="https://via.placeholder.com/200x200.png?text=Premium+Set" alt="Premium Set">
-      <div class="product-info">
-        <h2>Premium Set</h2>
-        <p>Exklusive Karten, NFT-Token und Zugang zu erweiterten Spielmodi.</p>
-        <p class="price">€600,00</p>
-        <div class="paypal-button">
+      <!-- Produkt 2 -->
+      <div class="product" style="margin-top:2rem;">
+        <img src="https://via.placeholder.com/200x200.png?text=Premium+Set" alt="Premium Set">
+        <div class="product-info">
+          <h2>Premium Set</h2>
+          <p>Exklusive Karten, NFT-Token und Zugang zu erweiterten Spielmodi.</p>
+          <p class="price">€600,00</p>
+          <div class="paypal-button">
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+              <input type="hidden" name="cmd" value="_xclick">
+              <input type="hidden" name="business" value="d_daniel7@web.de">
+              <input type="hidden" name="item_name" value="Premium Set">
+              <input type="hidden" name="amount" value="600.00">
+              <input type="hidden" name="currency_code" value="EUR">
+              <input type="hidden" name="return" value="https://ddshop-s6md.vercel.app/success.html">
+              <input type="hidden" name="cancel_return" value="https://ddshop-s6md.vercel.app/cancel.html">
+              <button class="btn" type="submit">Jetzt mit PayPal bezahlen</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    &copy; 2025 321Shop – Crypto City Demo. Alle Rechte vorbehalten.
+  </footer>
+</body>
+</html>
