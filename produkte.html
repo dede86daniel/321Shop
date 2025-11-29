@@ -1,0 +1,92 @@
+<!-- produkte.html -->
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>321Shop – Produkte</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <div class="brand">321Shop – Crypto City Demo</div>
+      <a href="index.html">Startseite</a>
+      <a href="login.html">Anmeldung</a>
+      <a href="produkte.html" class="active">Produkte</a>
+      <a href="impressum.html">Impressum</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1 class="h1">Produkte</h1>
+    <p class="p">Führe eine Live‑Zahlung durch. Weiterleitung zu PayPal, Zahlung an die hinterlegte E‑Mail.</p>
+
+    <section class="grid grid-2" style="margin-top:1rem;">
+      <!-- Produkt 1 -->
+      <div class="card product-card">
+        <div style="display:flex; gap:1rem; align-items:flex-start; flex-wrap:wrap;">
+          <img src="https://via.placeholder.com/220x220.png?text=Crypto+Starter" alt="Crypto Starter Pack"/>
+          <div style="flex:1;">
+            <h2 style="margin:0;">Crypto Starter Pack</h2>
+            <p class="p">Einstiegspaket mit Token, Karten und Anleitung.</p>
+            <div class="price">€600,00</div>
+
+            <!-- Klassisches PayPal-Formular -->
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" style="margin-top:0.6rem;">
+              <input type="hidden" name="cmd" value="_xclick"/>
+              <input type="hidden" name="business" value="d_daniel7@web.de"/>
+              <input type="hidden" name="item_name" value="Crypto Starter Pack"/>
+              <input type="hidden" name="amount" value="600.00"/>
+              <input type="hidden" name="currency_code" value="EUR"/>
+              <input type="hidden" name="return" value="https://deine-domain.de/success.html"/>
+              <input type="hidden" name="cancel_return" value="https://deine-domain.de/cancel.html"/>
+              <!-- Optional: Rechnungsreferenz -->
+              <input type="hidden" name="invoice" value="CC-STARTER-{{timestamp}}"/>
+              <button class="btn" type="submit">Jetzt mit PayPal bezahlen</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Produkt 2 -->
+      <div class="card product-card">
+        <div style="display:flex; gap:1rem; align-items:flex-start; flex-wrap:wrap;">
+          <img src="https://via.placeholder.com/220x220.png?text=Premium+Set" alt="Premium Set"/>
+          <div style="flex:1;">
+            <h2 style="margin:0;">Premium Set</h2>
+            <p class="p">Exklusive Karten, zusätzliche Modi, NFT‑Token.</p>
+            <div class="price">€600,00</div>
+
+            <!-- Klassisches PayPal-Formular -->
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" style="margin-top:0.6rem;">
+              <input type="hidden" name="cmd" value="_xclick"/>
+              <input type="hidden" name="business" value="d_daniel7@web.de"/>
+              <input type="hidden" name="item_name" value="Premium Set"/>
+              <input type="hidden" name="amount" value="600.00"/>
+              <input type="hidden" name="currency_code" value="EUR"/>
+              <input type="hidden" name="return" value="https://deine-domain.de/success.html"/>
+              <input type="hidden" name="cancel_return" value="https://deine-domain.de/cancel.html"/>
+              <input type="hidden" name="invoice" value="CC-PREMIUM-{{timestamp}}"/>
+              <button class="btn" type="submit">Jetzt mit PayPal bezahlen</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card" style="margin-top:1rem;">
+      <h3 style="margin:0 0 0.5rem;">Hinweise zur Zahlung</h3>
+      <ul>
+        <li><strong>E‑Mail‑Routing:</strong> Zahlungen werden an d_daniel7@web.de gesendet.</li>
+        <li><strong>Rückleitungsseiten:</strong> Erstelle success.html und cancel.html für klare Kommunikation.</li>
+        <li><strong>Referenzen:</strong> Du kannst die invoice‑Werte serverseitig dynamisch setzen.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    &copy; 2025 321Shop – Crypto City Demo. Alle Rechte vorbehalten.
+  </footer>
+</body>
+</html>
